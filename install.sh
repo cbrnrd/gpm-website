@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root. Try `curl -fsSL https://git.io/get-gpm | sudo bash`" 
+   echo "This script must be run as root. Try \`curl -fsSL https://git.io/get-gpm | sudo bash\`" 
    exit 1
 fi
 
@@ -23,4 +23,4 @@ make install
 sudo cp bin/gpm /usr/local/bin/gpm
 username=$(whoami)
 
-echo "All done! Just run `gpm help` to start"
+echo "All done! Just run \`sudo gpm help\` to start"
