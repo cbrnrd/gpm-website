@@ -21,6 +21,8 @@ echo "Building gpm..."
 make install
 
 sudo cp bin/gpm /usr/local/bin/gpm
-username=$(whoami)
+
+cd ..
+rm -rf gpm/
 
 echo "All done! Just run \`sudo gpm help\` to start"
